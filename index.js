@@ -5,7 +5,13 @@ You should not use the reverse method and you should not use the reverse method 
 
 The function should return a NEW string as the output. 
 */
-function reverseString(str) {}
+function reverseString(str) {
+    let bin=''
+    for (let x = str.length-1; x >= 0; x--){
+        bin+=str[x]
+    }
+    return bin
+}
 
 // Test the function
 console.log(reverseString("Hello")); // Output: "olleH"
